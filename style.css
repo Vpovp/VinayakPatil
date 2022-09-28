@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+/*  */
+body{
+    margin:0;
+    padding:0;
+    font-family: var(--body-font);
+    height:1000px;
+    width:100%;
+}
+
+/* variables */
+:root{
+    --first-color:#5361ff;
+    --body-font: "Montserrat", sans-serif;
+}
+
+/* main */
+#container{
+    width:100%;
+    min-height: 100vh;
+    
+
+}
+
+
+/* navbar */
+header{
+    position: relative;
+    width:100%;
+    /* margin-left:10%; */
+    /* padding-left:10%; */
+    /* padding-right:10%; */
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #5361ff;
+    /* background-color: #ed0b70; */
+    /* background-color: #4cbfa6; */
+    /* background-color: #ffa101; */
+}
+
+/* first in header */
+#text-logo{
+    width:130px;
+    color:white;
+}
+
+/* second in header home about ........... */
+nav{
+    width:400px;
+}
+nav #menu{
+    display: flex;
+    justify-content:space-around;
+}
+nav #menu li{
+    list-style:none;
+}
+nav #menu li a{
+    text-decoration:none;
+    font-size:0.8rem;
+    color:white
+
+}
+nav #menu li a:hover{
+    color:white;
+    /* text-shadow:0px 2px 4px black; */
+    text-decoration: underline 5px white;
+}
+#img{
+    display:none;
+}
+/* nav ul li a::after{
+    content:"";
+    width:2rem;
+    height:0.1rem;
+    position:absolute;
+    top:2.3rem;
+    z-index:1;
+    right:20.5rem;
+    background-color:white;
+} */
+
+
+
+
+/* home-section */
+
+#home{
+    position:absolute;
+    width:100%;
+    min-height:400px;
+    /* background-color: orange; */
+    /* background-color: #ed0b70; */
+    /* background-color: #4cbfa6; */
+    /* background-color: #ffa101; */
+    background-color: #5361ff;
+}
+#home:hover #header-text h1{
+    /* text-shadow:0 3px 15px black; */
+    /* display:block;
+    animation-name:header;
+    animation-duration:0.5s;
+    animation-iteration-count:initial;
+    animation-direction: normal;
+    animation-play-state:running;
+    animation-timing-function:ease; */
+
+    
+
+}
+/* @keyframes header{
+    0%{top:-10px;}
+    10%{top:0px;}
+    20%{top:5px;}
+    30%{top:10px;}
+    40%{top:15px;}
+    50%{top:20px;}
+    60%{top:25px;}
+    70%{top:30px;}
+    80%{top:35px;}
+    90%{top:40px;}
+    100%{top:45px;}
+} */
+#home-content{
+    display:flex;
+    /* align-items:center; */
+    justify-content: space-evenly;
+    position: absolute;
+    width: 80%;
+    min-height:400px;
+    margin-left:10%;
+
+}
+#header-text h1{
+    text-align:center;
+    font-size:100px;
+    cursor:pointer;
+    color:white;
+    /* position:relative;
+    top:-10px; */
+    text-shadow:0px 0px 10px rgba(255,255,255,0.7);
+}
+#header-text{
+    display:block;
+}
+#header-text p{
+    transform:rotate(-90deg);
+    position:relative;
+    left:-60px;
+    color:white;
+    
+}
+#home-content img{
+    height:70vh;
+    margin-left:20%;
+}
+
+/* section 2 */
+#About{
+    height:50vh;
+    /* border:10px solid red; */
+    position:relative;
+    top:80vh;
+}
+#About-name{
+    text-align:center;
+    font-size:2rem;
+    font-weight:800;
+
+}
+#About:hover #About-name{
+    text-decoration:underline 5px #5361ff;
+}
+#About-holder{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    position:relative;
+    top:2vh;
+    width: 100%;
+}
+#About-image{
+    width:20%;
+    height:35vh;
+}
+#About-image img{
+    width:100%;
+    height:100%;
+}
+#About-text{
+    width:30%;
+
+}
+#About-description{
+    text-align:left;
+
+}
+#About-logo{
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+#About-logo a i{
+    color:gray;
+    transform:scale(1.5);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:750px) {
+    header{
+        display: block;
+    }
+    #text-logo{
+        position:relative;
+        top:10px;
+        left:20px;
+        width:50px;
+
+    }
+    nav{
+        width:100%;
+        height:10rem;
+    }
+    nav #menu{
+        background-color: whitesmoke;
+        display: block;
+
+    }
+    nav #menu li{
+        text-align:right;
+        margin-right:10px;
+        
+    }
+    nav #menu li a{
+        color:black;
+
+    }
+    #img{
+        display:inline-block;
+        position:relative;
+        left:85vw;
+        top:-2vh;
+        width:20px;
+        filter:invert(100%);
+        
+    }
+    #home{
+        height:50vh;
+    }
+    #home-content{
+        display:block;
+    }
+    #home-content img{
+        width:60%;
+        height:60%;
+    }
+    #header-text p{
+        margin-right:50px;
+        font-size:0.85rem;
+        position:absolute;
+    }
+    #header-text h1{
+        font-size:400%;
+    }
+
+}
